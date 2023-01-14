@@ -581,6 +581,7 @@ body {
   background: #FFFFFF;
   color: #333;
   border: 1.5px solid #E5E7EA;
+}
 .header {
   padding: 20px 0;
 }
@@ -1023,6 +1024,8 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+  }
+}
 .header__login {
   position: absolute;
   bottom: 0;
@@ -1270,17 +1273,3 @@ body {
 
   }
 }
-/* VISUALLY-HIDDEN */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}/*# sourceMappingURL=main.css.map */
