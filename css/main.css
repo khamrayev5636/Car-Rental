@@ -121,7 +121,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -365,6 +366,11 @@ template {
   box-sizing: inherit;
 }
 
+::-moz-selection {
+  background-color: darkcyan;
+  color: gold;
+}
+
 ::selection {
   background-color: darkcyan;
   color: gold;
@@ -400,6 +406,489 @@ body {
   padding: 0 16px;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero__carusel-block {
+  width: 100%;
+  margin: 0px 0px 40px 0px;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 18px;
+  padding-top: 60px;
+  background-image: url("../../images/hero-malibu.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.hero-carusel-slike-activ {
+  background-image: url("../../images/hero-ford.jpg");
+}
+
+.hero-carusel-slike-act {
+  background-image: url("../../images/hero-gelik.jpg");
+}
+
+.hero__carusel__block-title {
+  width: 256px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.hero__carusel__block-text {
+  width: 416px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hero__carusel__block-form {
+  position: absolute;
+  bottom: 0px;
+  right: 30%;
+  left: 30%;
+  content: "";
+}
+
+.hero__carusel-lable {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 4px 2px 4px 30px;
+}
+
+.hero__carusel__input {
+  width: 600px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #555555;
+  outline: none;
+  border: none;
+}
+
+.hero__carusel__svg-block {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #299764;
+  padding: 20px;
+}
+
+.hero__inner-block {
+  margin-top: 100px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.hero__inner__block__title {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 568px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #333;
+}
+
+.hero__inner__block-text {
+  width: 100%;
+  max-width: 575px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.hero__inner__block-butten {
+  width: 100%;
+  text-align: center;
+}
+
+.hero__inner__block-btn-Compact {
+  width: 150px;
+  margin-right: 16px;
+  padding: 19px 40px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EA;
+  color: #333;
+  cursor: pointer;
+}
+
+.hero__inner__block-btn-Compact:hover {
+  background: #F5F5F5;
+  color: #333;
+}
+
+.hero__inner__block-btn-Compact:active {
+  background-color: #299764;
+  color: #fff;
+}
+
+.hero__inner__block-btn-Sports {
+  width: 173px;
+  margin-right: 16px;
+  padding: 19px 30px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EA;
+  color: #333;
+  cursor: pointer;
+}
+
+.hero__inner__block-btn-Sports:hover {
+  background: #F5F5F5;
+  color: #333;
+}
+
+.hero__inner__block-btn-Sports:active {
+  background-color: #299764;
+  color: #fff;
+}
+
+.hero__inner__block-btn-Vans {
+  width: 119px;
+  padding: 19px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  color: #333;
+  border: 1.5px solid #E5E7EA;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.hero__inner__block-btn-Vans:hover {
+  background: #F5F5F5;
+  color: #333;
+}
+
+.hero__inner__block-btn-Vans:active {
+  background-color: #299764;
+  color: #FFFFFF;
+}
+
+.hero__inner__compact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.hero__inner__compact-item {
+  width: 100%;
+  max-width: 387px;
+  margin-bottom: 20px;
+  padding: 30px 0px;
+  background: #F5F5F5;
+  border-radius: 16px;
+  color: #333;
+  list-style-type: none;
+}
+
+.hero__inner__compact-item:hover {
+  color: #fff;
+  background-color: #299764;
+  transition: 0.3s;
+}
+
+.hero__inner__compact-title-block {
+  padding: 0 24px;
+}
+
+.hero__inner__compact-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.hero__inner__compact-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.hero__inner__compact-img {
+  margin-top: 16px;
+  width: 387px;
+}
+
+.hero__inner__compact__service {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 24px;
+}
+
+.hero__inner__compact__service-seats {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.hero__inner__compact__service-seats:nth-child(1) {
+  margin-right: 68px;
+  margin-bottom: 24px;
+}
+.hero__inner__compact__service-seats:nth-child(2) {
+  margin-bottom: 24px;
+}
+.hero__inner__compact__service-seats:nth-child(3) {
+  margin-right: 56px;
+}
+
+.hero__inner__compact__icon {
+  color: #333;
+}
+
+.hero__inner__compact-link-block {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+.hero__inner__compact-link {
+  display: block;
+  text-decoration: none;
+  width: 173px;
+  margin: 0 auto;
+  padding: 18px 30px;
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EA;
+  border-radius: 100px;
+  color: #000000;
+}
+
+.hero__inner__compact-link:hover {
+  background: #F5F5F5;
+}
+
+.hero__inner__compact-link:active {
+  background: #299764;
+  color: #fff;
+}
+
+.hero__inner__compact__icon {
+  margin-right: 15px;
+}
+
+.hero__inner__list-ports {
+  display: none;
+}
+
+.hero__inner__list-Vans {
+  display: none;
+}
+
+@media only screen and (max-width: 1207px) {
+  .hero__inner__compact-list {
+    justify-content: space-around;
+  }
+  .hero__inner__compact-item {
+    margin: 0px 5px 20px 5px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .hero__carusel-block {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    max-width: 1120px;
+    height: 500px;
+    border-radius: 18px;
+    padding-top: 60px;
+    background-image: url("../../images/hero-malibu-table.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  .hero-carusel-slike-activ {
+    background-image: url("../../images/hero-ford.jpg");
+  }
+  .hero-carusel-slike-act {
+    background-image: url("../../images/hero-gelik.jpg");
+  }
+  .hero__carusel__block-title {
+    width: 256px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+  .hero__carusel__block-text {
+    width: 416px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .hero__carusel__block-form {
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+    left: 10%;
+    content: "";
+  }
+  .hero__carusel-lable {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 4px 2px 4px 30px;
+  }
+  .hero__carusel__input {
+    width: 100%;
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+    outline: none;
+    border: none;
+  }
+  .hero__carusel__svg-block {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #299764;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .hero__carusel-block {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 18px;
+    padding-top: 60px;
+    background-image: url("../../images/hero-malibu-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  .hero__carusel__block-title {
+    width: 171px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+  .hero__carusel__block-text {
+    width: 283px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .hero__carusel__block-form {
+    position: absolute;
+    bottom: 0px;
+    right: 2%;
+    left: 2%;
+    content: "";
+  }
+  .hero__carusel-lable {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 4px 2px 4px 30px;
+  }
+  .hero__carusel__input {
+    width: 600px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #555555;
+    outline: none;
+    border: none;
+  }
+  .hero__carusel__svg-block {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #299764;
+    padding: 18px;
+  }
+  .hero__inner__block__title {
+    text-align: center;
+    max-width: 232px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .hero__inner__block-text {
+    max-width: 321px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #555555;
+  }
+  .hero__inner__block-btn-Compact {
+    max-width: 106px;
+    padding: 14px 20px;
+    margin-right: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .hero__inner__block-btn-Sports {
+    max-width: 119px;
+    padding: 14px 10px;
+    margin-right: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .hero__inner__block-btn-Vans {
+    max-width: 75px;
+    padding: 14px 20px;
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -409,7 +898,8 @@ body {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
