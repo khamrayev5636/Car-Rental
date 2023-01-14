@@ -15,7 +15,17 @@ const elListVans = document.querySelector(".hero__inner__list-Vans");
 elBtnCompact.addEventListener("click", function(evt){ 
 
     evt.preventDefault() 
-     
+      
+    elBtnCompact.style.background = "#299764";
+    elBtnCompact.style.color = "#FFFFFF"; 
+
+    elBtnSports.style.background = "#ffffff";
+    elBtnSports.style.color = "#333333";
+
+    elBtnVans.style.background = "#ffffff";
+    elBtnVans.style.color = "#333333"; 
+
+
     elListCompact.style.display = "flex";
    elListPorts.style.display = "none"
    elListVans.style.display = "none";
@@ -25,7 +35,15 @@ elBtnCompact.addEventListener("click", function(evt){
 elBtnSports.addEventListener("click", function(evt){ 
 
     evt.preventDefault() 
-    
+    elBtnSports.style.background = "#299764";
+    elBtnSports.style.color = "#FFFFFF";
+
+    elBtnCompact.style.background = "#ffffff";
+    elBtnCompact.style.color = "#333333"; 
+
+    elBtnVans.style.background = "#ffffff";
+    elBtnVans.style.color = "#333333";
+
    elListPorts.style.display = "flex"
    elListCompact.style.display = "none";
    elListVans.style.display = "none";
@@ -35,16 +53,22 @@ elBtnSports.addEventListener("click", function(evt){
 elBtnVans.addEventListener("click", function(evt){ 
 
     evt.preventDefault() 
+    elBtnVans.style.background = "#299764";
+    elBtnVans.style.color = "#FFFFFF"; 
+
+    elBtnCompact.style.background = "#ffffff";
+    elBtnCompact.style.color = "#333333";
+
+    elBtnSports.style.background = "#ffffff";
+    elBtnSports.style.color = "#333333";
     
     elListVans.style.display = "flex";
    elListPorts.style.display = "none"
    elListCompact.style.display = "none";
    
 
-})
-
-// --------------------------------------------hero carusel end------------------------------
-
+}) 
+//--------------------------------------hero carusel end-----------------------------------------------
 
 
 const elBody = document.querySelector("body");
