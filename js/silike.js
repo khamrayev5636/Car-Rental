@@ -1,8 +1,31 @@
+// Slick start
+
+
+
 $('.hero-blosk').slick({
+    centerMode: true,
+    centerPadding: '10px',
     slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
     autoplaySpeed: 2000,
-    dots: true,
-    arrows: false,
-  });
+    variableWidth: true,
+    infinite: true,
+    dots:true,
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        }
+    ]
+});

@@ -1,72 +1,67 @@
-
- 
-
-
 // ---------------------------------hero carusel start--------------------
 const elBtnCompact = document.querySelector(".hero__inner__block-btn-Compact"); 
 const elBtnSports = document.querySelector(".hero__inner__block-btn-Sports"); 
 const elBtnVans = document.querySelector(".hero__inner__block-btn-Vans"); 
- 
 const elListCompact = document.querySelector(".hero__inner-list-activ");
 const elListPorts = document.querySelector(".hero__inner__list-ports");
 const elListVans = document.querySelector(".hero__inner__list-Vans");
- 
+
 
 elBtnCompact.addEventListener("click", function(evt){ 
-
+    
     evt.preventDefault() 
-      
+    
     elBtnCompact.style.background = "#299764";
     elBtnCompact.style.color = "#FFFFFF"; 
-
+    
     elBtnSports.style.background = "#ffffff";
     elBtnSports.style.color = "#333333";
-
+    
     elBtnVans.style.background = "#ffffff";
     elBtnVans.style.color = "#333333"; 
-
-
+    
+    
     elListCompact.style.display = "flex";
-   elListPorts.style.display = "none"
-   elListVans.style.display = "none";
-   
+    elListPorts.style.display = "none"
+    elListVans.style.display = "none";
+    
 })
 
 elBtnSports.addEventListener("click", function(evt){ 
-
+    
     evt.preventDefault() 
     elBtnSports.style.background = "#299764";
     elBtnSports.style.color = "#FFFFFF";
-
+    
     elBtnCompact.style.background = "#ffffff";
     elBtnCompact.style.color = "#333333"; 
-
+    
     elBtnVans.style.background = "#ffffff";
     elBtnVans.style.color = "#333333";
-
-   elListPorts.style.display = "flex"
-   elListCompact.style.display = "none";
-   elListVans.style.display = "none";
-
+    
+    elListPorts.style.display = "flex"
+    elListCompact.style.display = "none";
+    elListVans.style.display = "none";
+    
 }) 
 
 elBtnVans.addEventListener("click", function(evt){ 
-
+    
     evt.preventDefault() 
     elBtnVans.style.background = "#299764";
     elBtnVans.style.color = "#FFFFFF"; 
-
+    
     elBtnCompact.style.background = "#ffffff";
     elBtnCompact.style.color = "#333333";
-
+    
     elBtnSports.style.background = "#ffffff";
     elBtnSports.style.color = "#333333";
     
     elListVans.style.display = "flex";
-   elListPorts.style.display = "none"
-   elListCompact.style.display = "none";
-   
-
+    elListPorts.style.display = "none"
+    elListCompact.style.display = "none";
+    
+    
 }) 
 //--------------------------------------hero carusel end-----------------------------------------------
 
@@ -82,7 +77,7 @@ const elOverlay = document.querySelector(".overlay")
 elBurger.addEventListener("click" , ()=> {
     elHeader.classList.add("shownav");
     elOverlay.classList.add("shownav");
-
+    
 });
 
 elClose.addEventListener("click" , ()=> {
@@ -96,3 +91,35 @@ elDark.addEventListener("click", ()=> {
     elClose.classList.toggle("shownav")
 })
 
+
+// Slick start
+
+
+
+$('.hero-blosk').slick({
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 1,
+    autoplaySpeed: 2000,
+    variableWidth: true,
+    infinite: true,
+    dots:true,
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
