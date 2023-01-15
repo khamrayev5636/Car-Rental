@@ -142,10 +142,10 @@
     position: absolute;
     bottom: 0;
     right: 20px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .header__dark-btn {
@@ -215,6 +215,11 @@
     display: none;
 }
 
+.line {
+    border-bottom: 1.5px solid var(--main-border-boottom-color);
+    margin-bottom: 20px;
+}
+
 
 @include mobile-first(794px){
     
@@ -257,7 +262,7 @@
     
 }
 
-@include mobile-first(1232px){
+@include mobile-first(1207px){
     
     .header__info{ 
         display: flex;
