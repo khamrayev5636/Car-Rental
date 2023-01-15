@@ -13,7 +13,7 @@
     font-weight: 600;
     font-size: 36px;
     line-height: 44px; 
-    --main-color-black:#000;
+    color: var(--main-color-black);
 
 
  } 
@@ -24,7 +24,7 @@
     margin-bottom: 40px; 
     width: 100%;
     max-width: 648px;
-    --main-color-black:#000;
+    color: var(--main-color-black);
  } 
 
  .service-list{ 
@@ -45,7 +45,7 @@
     max-width: 590px;
     border-radius: 20px;
     background-color: var(--main-color-f5);
-    --main-color-black:#000;
+    color: var(--main-color-black);
  } 
  .service-item:hover{ 
 
@@ -53,7 +53,8 @@
      background-color: var(--main-color-hover-green);
      color: var(--main-body-color);
     transition: 0.5s;
- }
+ } 
+  
 
  .service__item-block{ 
 
@@ -76,7 +77,8 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 
-} 
+}
+
 .service__item-img{ 
 
     width: 50px;
