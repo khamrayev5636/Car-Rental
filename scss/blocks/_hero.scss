@@ -139,18 +139,7 @@ border: 1.5px solid #E5E7EA;
 color: #333;
 cursor: pointer;
 }  
-.hero__inner__block-btn-Compact:hover{ 
 
-  
-    background: #F5F5F5; 
-    color: #333;  
-} 
-.hero__inner__block-btn-Compact:active{ 
-
-  
-    background-color: #299764; 
-    color: #fff; 
-}
 .hero__inner__block-btn-Sports{ 
 
     width: 173px;
@@ -166,17 +155,7 @@ border: 1.5px solid #E5E7EA;
 color: #333; 
 cursor: pointer; 
 }  
-.hero__inner__block-btn-Sports:hover{ 
-   
-    background: #F5F5F5; 
-    color: #333;
-
-}  
-.hero__inner__block-btn-Sports:active{ 
-   
-    background-color: #299764; 
-    color: #fff;
-} 
+ 
 .hero__inner__block-btn-Vans{ 
 
     width: 119px;
@@ -189,18 +168,9 @@ background: #FFFFFF;
 color: #333;
 border: 1.5px solid #E5E7EA;
 border-radius: 100px;
-cursor: pointer;   
+ cursor: pointer;   
 } 
-.hero__inner__block-btn-Vans:hover{ 
-   
-    background: #F5F5F5; 
-    color: #333;
-}  
-.hero__inner__block-btn-Vans:active{ 
-   
-    background-color: #299764; 
-    color: #FFFFFF;
-} 
+ 
 
 .hero__inner__compact-list{ 
 
@@ -221,6 +191,7 @@ cursor: pointer;
     list-style-type: none;
 }  
 .hero__inner__compact-item:hover{ 
+
     color: #fff;
     background-color: #299764;
     transition: 0.3s;
@@ -276,6 +247,10 @@ line-height: 20px;
 .hero__inner__compact__icon{ 
 
     color: #333;
+} 
+.hero-js-icon{ 
+
+    color: #fff;
 }
 
 .hero__inner__compact-link-block{ 
@@ -291,19 +266,10 @@ line-height: 20px;
     width: 173px;
     margin: 0 auto;
    padding: 18px 30px; 
-   background: #FFFFFF;
-   border: 1.5px solid #E5E7EA;
+   background: #299764;
+   color: #fff;
    border-radius: 100px;
-   color: #000000;
-}
-.hero__inner__compact-link:hover{ 
-
-    background: #F5F5F5;
-} 
-.hero__inner__compact-link:active{ 
-
-    background: #299764;
-    color: #fff;
+   
 }
 .hero__inner__compact__icon{ 
 
