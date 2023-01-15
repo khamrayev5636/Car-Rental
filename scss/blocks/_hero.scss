@@ -595,6 +595,70 @@
         font-size: 14px;
         line-height: 17px;
         
+<<<<<<< HEAD
+           
+            width: 600px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #555555;
+            outline: none;
+            border: none;
+        } 
+        
+        .hero__carusel__svg-block{ 
+            width: 52px;
+            height: 52px;
+            border-radius: 50%; 
+            text-align: center;
+            background-color: #299764;
+            padding: 18px;
+        }  
+        .hero__inner__block__title{ 
+             text-align: center;
+            max-width: 232px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        } 
+        .hero__inner__block-text{ 
+            max-width: 321px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #555555;
+        } 
+        .hero__inner__block-btn-Compact{ 
+
+            max-width: 106px;
+            padding: 14px 20px;
+            margin-right: 14px;
+            font-weight: 500;
+           font-size: 14px;
+            line-height: 17px;
+        } 
+        .hero__inner__block-btn-Sports{ 
+
+            max-width: 119px;
+            padding: 14px 10px;
+            margin-right: 14px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+
+        }
+        .hero__inner__block-btn-Vans{ 
+            max-width: 75px;
+            padding: 14px 20px;
+            margin-right: 0;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        } 
+
+        
+=======
     }
     .hero__inner__block-btn-Vans{ 
         max-width: 75px;
@@ -604,4 +668,5 @@
         font-size: 14px;
         line-height: 17px;
     }
+>>>>>>> c1819cebf06f0812cbd1f222f8d20673c748733f
 }
