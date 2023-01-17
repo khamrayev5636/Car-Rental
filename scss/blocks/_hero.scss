@@ -644,6 +644,18 @@
     } 
     .hero__inner__block-btn-Compact{ 
         
+
+
+           
+            width: 600px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #555555;
+            outline: none;
+            border: none;
+        } 
+
         max-width: 106px;
         padding: 14px 20px;
         margin-right: 14px;
@@ -652,6 +664,7 @@
         line-height: 17px;
     } 
     .hero__inner__block-btn-Sports{ 
+
         
         max-width: 119px;
         padding: 14px 10px;
@@ -660,6 +673,7 @@
         font-size: 14px;
         line-height: 17px;
         
+
     }
     .hero__inner__block-btn-Vans{ 
         max-width: 75px;
@@ -668,6 +682,9 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+
+    }
+
     } 
     
     
@@ -680,3 +697,4 @@
     font-size: 14px;
     line-height: 17px;
 }
+
