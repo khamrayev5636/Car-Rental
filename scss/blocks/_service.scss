@@ -1,7 +1,7 @@
  
  .service{ 
    margin: 0 auto;
-   margin-bottom: 160px;
+   padding: 100px 0;
 }  
 
 
@@ -98,6 +98,11 @@
 
 @media only screen and(max-width:1218px){
    
+   .service {
+      padding: 160px 0;
+   }
+
+
    .service-list{ 
       
       padding: 0;
@@ -197,6 +202,9 @@
 } 
 @media only screen and(max-width:820px){
    
+   .service {
+      padding: 120px 0;
+   }
    
    .service-item{ 
       
