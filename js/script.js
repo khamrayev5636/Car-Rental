@@ -72,7 +72,7 @@ const elDarkSon = document.querySelector(".header__dark-btn");
 const elBurger = document.querySelector(".header__burger");
 const elClose = document.querySelector(".header__close-btn");
 const elHeader = document.querySelector(".header__info");
-const elOverlay = document.querySelector(".overlay")
+const elOverlay = document.querySelector(".overlay");
 
 elBurger.addEventListener("click" , ()=> {
     elHeader.classList.add("shownav");
@@ -96,30 +96,8 @@ elDark.addEventListener("click", ()=> {
 
 
 
-$('.hero-blosk').slick({
-    centerMode: true,
-    centerPadding: '10px',
-    slidesToShow: 1,
-    autoplaySpeed: 2000,
-    variableWidth: true,
-    infinite: true,
-    dots:true,
-    responsive: [
-        {
-            breakpoint: 1000,
-            settings: {
-                centerMode: true,
-                centerPadding: '0',
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                centerMode: true,
-                centerPadding: '0',
-                slidesToShow: 1
-            }
-        }
-    ]
-});
+
+
+// Community slick js
+
+
