@@ -171,45 +171,52 @@
 
 
 .hero__inner__compact-list{ 
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
 } 
 .hero__inner__compact-item{ 
-    
     width: 100%;
     max-width: 387px; 
     margin-bottom: 20px;
     padding: 30px 0px;
-    background: #F5F5F5;
+    background-color:var( --main-color-f5);
     border-radius: 16px;
-    color: #333;
     list-style-type: none;
+    cursor: pointer;
 }  
-.hero__inner__compact-item:hover{ 
-    
-    color: #fff;
-    background-color: #299764;
-    transition: 0.3s;
+.hero__inner__compact-item:hover{  
+    background-color:var(--main-color-green) ;
+    transition: 0.5s;
 } 
 
+.hero__inner__compact-item:hover .hero__inner__compact-title {
+    color: var(--main-bghero-white);
+}
+.hero__inner__compact-item:hover .hero__inner__compact-text {
+    color: var(--main-bghero-white);
+}
+.hero__inner__compact-item:hover .hero__inner__compact__service-seats {
+    color: var(--main-bghero-white);
+}
+
 .hero__inner__compact-title-block{ 
-    
     padding: 0 24px;
 }
 .hero__inner__compact-title{ 
+    margin-top: 0;
     margin-bottom: 8px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px; 
+    color: var(--main-color-black);
 }
 .hero__inner__compact-text{ 
-    
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    color: var(--main-color-55);
 } 
 .hero__inner__compact-img{ 
     margin-top: 16px;
@@ -218,16 +225,15 @@
 } 
 
 .hero__inner__compact__service{ 
-    
     display: flex; 
     flex-wrap: wrap;
     padding: 0 24px;
 }  
 .hero__inner__compact__service-seats{ 
-    
     font-weight: 500;
     font-size: 16px;
     line-height: 20px; 
+    color: var(--main-color-black);
     &:nth-child(1){ 
         margin-right: 68px;
         margin-bottom: 24px;
@@ -243,16 +249,13 @@
 }  
 
 .hero__inner__compact__icon{ 
-    
     color: #333;
 } 
 .hero-js-icon{ 
-    
     color: #fff;
 }
 
 .hero__inner__compact-link-block{ 
-    
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 160px;
@@ -269,27 +272,41 @@
     border-radius: 100px;
     
 }
+
 .hero__inner__compact__icon{ 
-    
     margin-right: 15px;
 } 
 
 .hero__inner__list-ports{ 
-    
     display: none;
     
 } 
 .hero__inner__list-Vans{ 
-    
     display: none;
 }
 
 .slick-prev , .slick-next {
     display: none !important;
+    transition: 0.5s;
+}
+
+.slick-next:hover::before{
+    background-image: url("../images/right-arrow-hover.svg");
+}
+
+.slick-next:active{
+    background-color: #299764 !important;
+}
+.slick-prev:active{
+    background-color: #299764 !important;
+}
+
+.slick-prev:hover::before{
+    background-image: url("../../images/hero-left-arrow.svg");
 }
 
 
-       
+
 .slick-dots {
     top: 81%;
     left: -1%;
@@ -307,7 +324,7 @@
     border-radius: 100px;
     transition: 0.5s;
 }
-  
+
 .slick-dots li button:focus{
     width: 30px;
     opacity: 1;
@@ -324,8 +341,7 @@
         
         justify-content: space-around;
     }  
-    .hero__inner__compact-item{ 
-        
+    .hero__inner__compact-item{  
         margin: 0px 5px 20px 5px;
     }
     
@@ -411,7 +427,7 @@
     
 }  
 
-@include mobile-first (732px){
+@include mobile-first (826px){
     
     .slick-prev , .slick-next {
         display: block !important;
@@ -464,10 +480,10 @@
     .slick-prev:focus {
         background-color: #fff;
     }
-
-       
+    
+    
     .slick-dots {
-        top: 81%;
+        top: 77%;
         left: -40%;
     }
     
@@ -482,16 +498,16 @@
 @include mobile-first(1207px){
     
     .slick-prev {
-        left: 90%;
+        left: 86%;
     }
     
-    .slick-next {
+    .slick-next{
         right: 3%;
     }
     
     .slick-dots {
         top: 81%;
-        left: -43%;
+        left: -42%;
     }
     
 }
@@ -594,71 +610,56 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+        width: 600px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #555555;
+        outline: none;
+        border: none;
+    } 
+    
+    .hero__carusel__svg-block{ 
+        width: 52px;
+        height: 52px;
+        border-radius: 50%; 
+        text-align: center;
+        background-color: #299764;
+        padding: 18px;
+    }  
+    .hero__inner__block__title{ 
+        text-align: center;
+        max-width: 232px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    } 
+    .hero__inner__block-text{ 
+        max-width: 321px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #555555;
+    } 
+    .hero__inner__block-btn-Compact{ 
         
-<<<<<<< HEAD
-           
-            width: 600px;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 20px;
-            color: #555555;
-            outline: none;
-            border: none;
-        } 
+        max-width: 106px;
+        padding: 14px 20px;
+        margin-right: 14px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    } 
+    .hero__inner__block-btn-Sports{ 
         
-        .hero__carusel__svg-block{ 
-            width: 52px;
-            height: 52px;
-            border-radius: 50%; 
-            text-align: center;
-            background-color: #299764;
-            padding: 18px;
-        }  
-        .hero__inner__block__title{ 
-             text-align: center;
-            max-width: 232px;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
-        } 
-        .hero__inner__block-text{ 
-            max-width: 321px;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            color: #555555;
-        } 
-        .hero__inner__block-btn-Compact{ 
-
-            max-width: 106px;
-            padding: 14px 20px;
-            margin-right: 14px;
-            font-weight: 500;
-           font-size: 14px;
-            line-height: 17px;
-        } 
-        .hero__inner__block-btn-Sports{ 
-
-            max-width: 119px;
-            padding: 14px 10px;
-            margin-right: 14px;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
-
-        }
-        .hero__inner__block-btn-Vans{ 
-            max-width: 75px;
-            padding: 14px 20px;
-            margin-right: 0;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
-        } 
-
+        max-width: 119px;
+        padding: 14px 10px;
+        margin-right: 14px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
         
-=======
     }
     .hero__inner__block-btn-Vans{ 
         max-width: 75px;
@@ -667,6 +668,15 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
-    }
->>>>>>> c1819cebf06f0812cbd1f222f8d20673c748733f
+    } 
+    
+    
+}
+.hero__inner__block-btn-Vans{ 
+    max-width: 75px;
+    padding: 14px 20px;
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
 }
