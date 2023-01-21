@@ -18,6 +18,14 @@
     align-items: center;
 }
 
+.brand__list .slick-prev {
+    display: none !important;
+}
+
+.brand__list .slick-next {
+    display: none !important;
+}
+
 .brand__item {
     margin-right: 10px;
     margin-left: 10px;

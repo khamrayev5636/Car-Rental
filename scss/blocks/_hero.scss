@@ -10,8 +10,7 @@
     height: 500px;
     border-radius: 18px;
     padding-top: 60px;
-    
-    background-image: url("../../images/hero-malibu.jpg");
+    background-image: url("../images/hero_malibu.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -20,12 +19,10 @@
     
 }  
 .hero-carusel-slike-activ{ 
-    
-    background-image: url("../../images/hero-ford.jpg"); 
+    background-image: url("../images/hero__ford.png"); 
 }
 .hero-carusel-slike-act{ 
-    
-    background-image: url("../../images/hero-gelik.jpg");  
+    background-image: url("../images/hero_gelik.png");  
 }
 
 .hero__carusel__block-title{
@@ -308,7 +305,7 @@
 
 
 .slick-dots {
-    top: 81%;
+    top: 71%;
     left: -1%;
 }
 
@@ -357,18 +354,18 @@
         height: 500px;
         border-radius: 18px;
         padding-top: 60px;
-        background-image: url("../../images/hero-malibu-table.jpg");
+        background-image: url("../images/hero_malibu.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center center; 
     }
     .hero-carusel-slike-activ{ 
         
-        background-image: url("../../images/hero-ford.jpg"); 
+        background-image: url("../images/hero__ford.png"); 
     }
     .hero-carusel-slike-act{ 
         
-        background-image: url("../../images/hero-gelik.jpg");  
+        background-image: url("../images/hero_gelik.png");  
     } 
     
     .hero__carusel__block-title{
@@ -427,6 +424,12 @@
     
 }  
 
+@include mobile-first (630px){
+    .slick-dots {
+        top: 79%;
+    }
+}
+
 @include mobile-first (826px){
     
     .slick-prev , .slick-next {
@@ -440,8 +443,8 @@
     }
     
     .slick-prev {
-        left: 85%;
-        top: 440px;
+        left: 87%;
+        top: 445px !important;
     }
     
     .slick-prev::before{
@@ -464,7 +467,7 @@
     }
     
     .slick-next {
-        top: 440px;
+        top: 445px !important;
         right: 3%;
     }
     
@@ -483,7 +486,7 @@
     
     
     .slick-dots {
-        top: 77%;
+        top: 80%;
         left: -40%;
     }
     
@@ -491,18 +494,18 @@
 
 @include mobile-first(950px){
     .slick-next {
-        right: 5%;
+        right: 4% !important;
     }
 }
 
 @include mobile-first(1207px){
     
     .slick-prev {
-        left: 86%;
+        left: 89.5% !important;
     }
     
     .slick-next{
-        right: 3%;
+        right: 3% !important;
     }
     
     .slick-dots {
@@ -521,7 +524,7 @@
         height: 300px;
         border-radius: 18px;
         padding-top: 60px;
-        background-image: url("../../images/hero-malibu-mobile.jpg");
+        background-image: url("../images/hero_malibu.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center center;
@@ -642,20 +645,16 @@
         line-height: 15px;
         color: #555555;
     } 
-    .hero__inner__block-btn-Compact{ 
-        
-
-
-           
-            width: 600px;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 20px;
-            color: #555555;
-            outline: none;
-            border: none;
-        } 
-
+    .hero__inner__block-btn-Compact{    
+        width: 600px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #555555;
+        outline: none;
+        border: none;
+    } 
+    .hero__inner__block-btn-Sports{
         max-width: 106px;
         padding: 14px 20px;
         margin-right: 14px;
@@ -664,7 +663,7 @@
         line-height: 17px;
     } 
     .hero__inner__block-btn-Sports{ 
-
+        
         
         max-width: 119px;
         padding: 14px 10px;
@@ -673,7 +672,7 @@
         font-size: 14px;
         line-height: 17px;
         
-
+        
     }
     .hero__inner__block-btn-Vans{ 
         max-width: 75px;
@@ -682,13 +681,13 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
-
+        
     }
+    
+} 
 
-    } 
-    
-    
-}
+
+
 .hero__inner__block-btn-Vans{ 
     max-width: 75px;
     padding: 14px 20px;
