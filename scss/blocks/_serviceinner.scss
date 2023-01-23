@@ -145,10 +145,15 @@
     transition: 0.5s;
 }  
 
+@include mobile-first (1207px) {
+    .service__inner-block {
+        margin-bottom: 160px;
+    }
+}
+
 @media only screen and(max-width:1128px){
     
     .service__inner-block{
-        
         background-size: 284px 372px;
         background-position: calc(50% + 350px) calc(50% + 80px); 
     }
