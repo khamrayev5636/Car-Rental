@@ -135,6 +135,7 @@
 }
 
 .footer__bottom-link {
+    position: relative;
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
@@ -142,7 +143,26 @@
     margin-bottom: 12px;
     color: var(--main-color-55);
     text-decoration: none;
+    transition: 0.5s
 }
+
+.footer__bottom-link::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background-color: var(--main-color-black);
+    transition: 0.5s;
+    content: "";
+}
+
+.footer__bottom-link:hover::before {
+    width: 100%;
+    height: 1.5px;
+    color: var(--main-color-black);
+}
+
 
 .footer__netwwork-list {
     @include list-unstyle;
