@@ -373,6 +373,7 @@ template {
 html {
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -388,6 +389,10 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   overflow-x: hidden;
   background-color: var(--main-body-color);
+}
+
+body.body-js {
+  overflow: hidden;
 }
 
 .site-main {
@@ -2337,10 +2342,12 @@ body {
 }
 
 .footer__title {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   margin-top: 0;
+  margin-bottom: 16px;
   color: var(--main-color-black);
 }
 
@@ -2412,10 +2419,12 @@ body {
 }
 
 .footer__bottom-title {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   margin-top: 0;
+  margin-bottom: 16px;
   color: var(--main-color-black);
 }
 
@@ -2597,4 +2606,37 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.scroll__top {
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--main-color-green);
+  border-radius: 100px;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.scroll__top:hover {
+  background-color: var(--main-color-hover-green);
+}
+
+.scroll__top.active {
+  right: 20px;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1207) {
+  .scroll__top {
+    width: 70px;
+    height: 70px;
+  }
 }/*# sourceMappingURL=main.css.map */

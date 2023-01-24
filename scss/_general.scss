@@ -17,6 +17,7 @@
   html{
     height: 100%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   img{
@@ -30,6 +31,10 @@
     overflow-x: hidden;
     background-color: var(--main-body-color);
     
+  }
+
+  body.body-js {
+    overflow: hidden
   }
   
   // STICKY-FOOTER 
