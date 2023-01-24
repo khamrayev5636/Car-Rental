@@ -16,6 +16,7 @@
     <div class="scroll__top" aria-hidden="true">
         <img src="./images/top_icon.svg" alt="top_icon">
     </div>
+    <!-- Scroll end -->
     
     <!-- Header start -->
     
@@ -1393,8 +1394,47 @@
     </footer>
 
     <!-- Footer end -->
+
+
+    <!-- Modal start -->
+    
+   <div class="container">
+     <div class="modal__box">
+        <div class="modal">
+         <div class="modal__close">
+             <button class="modal__close-btn" type="button"></button>
+         </div>
+          <div class="modal__hero">
+            <h3 class="modal__title">
+                Login
+            </h3>
+            <p class="modal__text">
+                Use the email and password that you login
+            </p>
+          </div>   
+          <form action="https://echo.htmlacademy.ru/courses" class="modal__form" method="post" autocomplete="off">
+            <label class="modal__email">
+                <input type="email" class="modal__input modal__input-email" name="user_email" placeholder="Email">
+                <span class="modal__error">Invalid format entered</span>
+            </label>
+            <label class="modal__password">
+                <input type="password" class="modal__input modal__input-password" name="user_email" placeholder="Password">
+            </label>
+            <span class="modal__form-span">
+                I want to create an account
+            </span>
+            <button class="modal__button" type="submit">Login
+                <img src="images/login-icon.svg" style="margin-left: 12px" alt="login_icone">
+            </button>
+          </form> 
+        </div>
+     </div>
+   </div>
+    
+    <!-- Modal end -->
                                                                                                                                                                                      
     <div class="overlay"></div>
+    <div class="overlay__modal"></div>
     <!-- Javascript file start -->
     
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
