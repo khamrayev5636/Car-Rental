@@ -77,18 +77,33 @@ const elOverlay = document.querySelector(".overlay");
 elBurger.addEventListener("click" , ()=> {
     elHeader.classList.add("shownav");
     elOverlay.classList.add("shownav");
+    elBody.classList.add("body-js");
     
 });
 
 elClose.addEventListener("click" , ()=> {
     elHeader.classList.remove("shownav");
     elOverlay.classList.remove("shownav");
+    elBody.classList.remove("body-js");
 });
 
 elDark.addEventListener("click", ()=> {
     elBody.classList.toggle("dark");
     elDarkSon.classList.toggle("shownav");
     elClose.classList.toggle("shownav")
+})
+
+
+// Scroll start
+
+const scrollBtn = document.querySelector(".scroll__top");
+window.addEventListener("scroll" , ()=> {
+    scrollBtn.classList.toggle("active" , window.scrollY > 500)
+})
+
+scrollBtn.addEventListener("click" , ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 })
 
 
