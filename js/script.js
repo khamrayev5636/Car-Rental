@@ -72,7 +72,13 @@ const elDarkSon = document.querySelector(".header__dark-btn");
 const elBurger = document.querySelector(".header__burger");
 const elClose = document.querySelector(".header__close-btn");
 const elHeader = document.querySelector(".header__info");
+const elLogin = document.querySelector(".header__login-regis");
+const elModal = document.querySelector(".modal");
+const elModalClose = document.querySelector(".modal__close");
+const elModalOverlay = document.querySelector(".overlay__modal")
 const elOverlay = document.querySelector(".overlay");
+
+// Burger star
 
 elBurger.addEventListener("click" , ()=> {
     elHeader.classList.add("shownav");
@@ -87,12 +93,25 @@ elClose.addEventListener("click" , ()=> {
     elBody.classList.remove("body-js");
 });
 
+// Dark start
+
 elDark.addEventListener("click", ()=> {
     elBody.classList.toggle("dark");
     elDarkSon.classList.toggle("shownav");
     elClose.classList.toggle("shownav")
 })
 
+// Modal start
+
+elLogin.addEventListener("click" , ()=> {
+    elModal.classList.add("modal-js");
+    elModalOverlay.classList.add("overlay__modal-js");
+})
+
+elModalClose.addEventListener("click" , ()=> {
+    elModal.classList.remove("modal-js");
+    elModalOverlay.classList.remove("overlay__modal-js");
+})
 
 // Scroll start
 
@@ -108,10 +127,6 @@ scrollBtn.addEventListener("click" , ()=>{
 
 
 // Slick start
-
-
-
-
 
 // Community slick js
 
